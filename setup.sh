@@ -35,6 +35,8 @@ link_file() {
 mkdir -p ~/.config
 mkdir -p ~/.zsh_scripts
 mkdir -p ~/.config/ghostty
+mkdir -p ~/.config/deck
+mkdir -p ~/.config/laminate
 
 echo ""
 echo "Creating symlinks..."
@@ -48,6 +50,8 @@ link_file "$DOTFILES_DIR/.vimrc" "$HOME/.vimrc"
 link_file "$DOTFILES_DIR/.config/starship.toml" "$HOME/.config/starship.toml"
 link_file "$DOTFILES_DIR/.zsh_scripts/obsidian_helper.sh" "$HOME/.zsh_scripts/obsidian_helper.sh"
 link_file "$DOTFILES_DIR/.config/ghostty/config" "$HOME/.config/ghostty/config"
+link_file "$DOTFILES_DIR/.config/deck/config.yml" "$HOME/.config/deck/config.yml"
+link_file "$DOTFILES_DIR/.config/laminate/config.yaml" "$HOME/.config/laminate/config.yaml"
 
 echo ""
 echo "Done! Please restart your shell or run: source ~/.zshrc"
