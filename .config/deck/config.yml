@@ -1,0 +1,12 @@
+basePresentationID: "1Dio0-TNPJPhBmtdf1bfnZ_c1nSDRK7iWavQWv5xOLCI"
+breaks: true
+codeBlockToImageCommand: "laminate"
+folderID: "1cqjsUnPsu5RmgszR0BfXu38HS9pxpG6W"
+
+defaults:
+  - if: page == 1
+    layout: title
+  - if: topHeadingLevel == 2
+    layout: section
+  - if: true
+    layout: title-and-body

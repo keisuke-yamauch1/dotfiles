@@ -13,6 +13,8 @@ macOS用の個人設定ファイル集
 | `.vimrc` | Vim設定 |
 | `.config/starship.toml` | Starshipプロンプト設定（Nerd Font対応） |
 | `.config/ghostty/config` | Ghosttyターミナル設定 |
+| `.config/deck/config.yml` | Deckプレゼンテーション設定 |
+| `.config/laminate/config.yaml` | Laminateコードブロック画像化設定 |
 | `.zsh_scripts/obsidian_helper.sh` | Obsidianデイリーノート用ヘルパー |
 
 ## セットアップ
