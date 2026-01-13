@@ -20,16 +20,11 @@ macOS用の個人設定ファイル集
 # リポジトリをクローン
 git clone git@github.com:keisuke-yamauch1/dotfiles.git ~/dotfiles
 
-# シンボリックリンクを作成
-ln -sf ~/dotfiles/.zshrc ~/.zshrc
-ln -sf ~/dotfiles/.zprofile ~/.zprofile
-ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
-ln -sf ~/dotfiles/.gitignore_global ~/.gitignore_global
-ln -sf ~/dotfiles/.vimrc ~/.vimrc
-ln -sf ~/dotfiles/.config/starship.toml ~/.config/starship.toml
-mkdir -p ~/.zsh_scripts
-ln -sf ~/dotfiles/.zsh_scripts/obsidian_helper.sh ~/.zsh_scripts/obsidian_helper.sh
+# セットアップスクリプトを実行
+~/dotfiles/setup.sh
 ```
+
+既存ファイルがある場合は `.backup` として退避されます。
 
 ## 依存関係
 
