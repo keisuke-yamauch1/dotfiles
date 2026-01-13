@@ -12,6 +12,7 @@ macOS用の個人設定ファイル集
 | `.gitignore_global` | グローバルgitignore |
 | `.vimrc` | Vim設定 |
 | `.config/starship.toml` | Starshipプロンプト設定（Nerd Font対応） |
+| `.config/ghostty/config` | Ghosttyターミナル設定 |
 | `.zsh_scripts/obsidian_helper.sh` | Obsidianデイリーノート用ヘルパー |
 
 ## セットアップ
@@ -30,5 +31,5 @@ git clone git@github.com:keisuke-yamauch1/dotfiles.git ~/dotfiles
 
 - [Homebrew](https://brew.sh/)
 - [Starship](https://starship.rs/) - `brew install starship`
-- [Nerd Fonts](https://www.nerdfonts.com/) - Starshipのアイコン表示用
+- [Hack Nerd Font](https://www.nerdfonts.com/) - Ghostty・Starship用（setup.shで自動インストール）
 - [anyenv](https://github.com/anyenv/anyenv) - 各種言語バージョン管理

@@ -6,6 +6,17 @@ DOTFILES_DIR="$(cd "$(dirname "$0")" && pwd)"
 
 echo "Setting up dotfiles from: $DOTFILES_DIR"
 
+# フォントのインストール確認
+echo ""
+echo "Checking font installation..."
+if ! brew list --cask font-hack-nerd-font &>/dev/null; then
+    echo "  Installing Hack Nerd Font..."
+    brew install --cask font-hack-nerd-font
+    echo "  Font installed successfully!"
+else
+    echo "  Hack Nerd Font is already installed."
+fi
+
 # シンボリックリンクを作成する関数
 link_file() {
     local src="$1"
@@ -23,6 +34,7 @@ link_file() {
 # .config ディレクトリを作成
 mkdir -p ~/.config
 mkdir -p ~/.zsh_scripts
+mkdir -p ~/.config/ghostty
 
 echo ""
 echo "Creating symlinks..."
@@ -35,6 +47,7 @@ link_file "$DOTFILES_DIR/.gitignore_global" "$HOME/.gitignore_global"
 link_file "$DOTFILES_DIR/.vimrc" "$HOME/.vimrc"
 link_file "$DOTFILES_DIR/.config/starship.toml" "$HOME/.config/starship.toml"
 link_file "$DOTFILES_DIR/.zsh_scripts/obsidian_helper.sh" "$HOME/.zsh_scripts/obsidian_helper.sh"
+link_file "$DOTFILES_DIR/.config/ghostty/config" "$HOME/.config/ghostty/config"
 
 echo ""
 echo "Done! Please restart your shell or run: source ~/.zshrc"
