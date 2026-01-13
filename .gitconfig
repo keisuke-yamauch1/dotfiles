@@ -1,0 +1,29 @@
+[user]
+	name = Keisuke Yamauchi
+	email = keisuke.yamauchi@kechiiiiin.com
+	signingKey =
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+[gpg]
+	program = gpg
+	format =
+[commit]
+	gpgSign = false
+[tag]
+	forceSignAnnotated = false
+[init]
+	defaultBranch = "main"
+[core]
+	excludesfile = ~/.gitignore_global
+	autocrlf = input
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[gpg "ssh"]
+	program =
+	allowedSignersFile =
