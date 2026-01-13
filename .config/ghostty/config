@@ -34,3 +34,4 @@ copy-on-select = true
 # クリップボードの読み書きを許可
 clipboard-read = allow
 clipboard-write = allow
+
