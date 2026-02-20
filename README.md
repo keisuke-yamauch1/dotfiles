@@ -6,16 +6,16 @@ macOS用の個人設定ファイル集
 
 | ファイル | 説明 |
 |---------|------|
-| `.zshrc` | zsh設定（PATH、エイリアス、プラグイン） |
-| `.zprofile` | シェルプロファイル（Homebrew、Python） |
-| `.gitconfig` | Git設定 |
-| `.gitignore_global` | グローバルgitignore |
-| `.vimrc` | Vim設定 |
-| `.config/starship.toml` | Starshipプロンプト設定（Nerd Font対応） |
-| `.config/ghostty/config` | Ghosttyターミナル設定 |
-| `.config/deck/config.yml` | Deckプレゼンテーション設定 |
-| `.config/laminate/config.yaml` | Laminateコードブロック画像化設定 |
-| `.zsh_scripts/obsidian_helper.sh` | Obsidianデイリーノート用ヘルパー |
+| `zsh/.zshrc` | zsh設定（PATH、エイリアス、プラグイン） |
+| `zsh/.zprofile` | シェルプロファイル（Homebrew、Python） |
+| `git/.gitconfig` | Git設定 |
+| `git/.gitignore_global` | グローバルgitignore |
+| `vim/.vimrc` | Vim設定 |
+| `starship/starship.toml` | Starshipプロンプト設定（Nerd Font対応） |
+| `ghostty/config` | Ghosttyターミナル設定 |
+| `deck/config.yml` | Deckプレゼンテーション設定 |
+| `laminate/config.yaml` | Laminateコードブロック画像化設定 |
+| `zsh_scripts/obsidian_helper.sh` | Obsidianデイリーノート用ヘルパー |
 
 ## セットアップ
 
