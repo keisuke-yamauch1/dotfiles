@@ -35,3 +35,7 @@ copy-on-select = true
 clipboard-read = allow
 clipboard-write = allow
 
+# --- キーバインド ---
+# Shift+EnterでLFを挿入
+keybind = shift+enter=text:\n
+
