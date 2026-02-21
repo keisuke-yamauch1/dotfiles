@@ -37,6 +37,8 @@ mkdir -p ~/.zsh_scripts
 mkdir -p ~/.config/ghostty
 mkdir -p ~/.config/deck
 mkdir -p ~/.config/laminate
+mkdir -p ~/.claude
+mkdir -p ~/.claude/hooks
 
 echo ""
 echo "Copying dotfiles..."
@@ -52,6 +54,17 @@ copy_file "$DOTFILES_DIR/zsh_scripts/obsidian_helper.sh" "$HOME/.zsh_scripts/obs
 copy_file "$DOTFILES_DIR/ghostty/config" "$HOME/.config/ghostty/config"
 copy_file "$DOTFILES_DIR/deck/config.yml" "$HOME/.config/deck/config.yml"
 copy_file "$DOTFILES_DIR/laminate/config.yaml" "$HOME/.config/laminate/config.yaml"
+copy_file "$DOTFILES_DIR/claude/settings.json" "$HOME/.claude/settings.json"
+copy_file "$DOTFILES_DIR/claude/hooks/discord-notify.py" "$HOME/.claude/hooks/discord-notify.py"
+
+# .envは既存がなければsampleからコピー（既存の設定を上書きしない）
+if [ ! -e "$HOME/.claude/.env" ]; then
+    cp "$DOTFILES_DIR/claude/.env.sample" "$HOME/.claude/.env"
+    echo "  Created: $HOME/.claude/.env (from .env.sample)"
+    echo "  ⚠ ~/.claude/.env を編集して実際のWebhook URLを設定してください"
+else
+    echo "  Skipped: $HOME/.claude/.env (already exists)"
+fi
 
 echo ""
 echo "Done! Please restart your shell or run: source ~/.zshrc"

@@ -16,6 +16,9 @@ macOS用の個人設定ファイル集
 | `deck/config.yml` | Deckプレゼンテーション設定 |
 | `laminate/config.yaml` | Laminateコードブロック画像化設定 |
 | `zsh_scripts/obsidian_helper.sh` | Obsidianデイリーノート用ヘルパー |
+| `claude/settings.json` | Claude Code設定（hooks、環境変数） |
+| `claude/hooks/discord-notify.py` | Claude Code停止・通知時のDiscord通知スクリプト |
+| `claude/.env.sample` | Claude Code用環境変数のテンプレート |
 
 ## セットアップ
 
