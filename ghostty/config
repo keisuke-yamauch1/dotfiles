@@ -21,6 +21,8 @@ window-padding-y = 10
 window-padding-balance = true
 
 # --- Macネイティブな挙動 ---
+# OptionキーをAltキーとして使う（特殊文字入力を無効化）
+macos-option-as-alt = true
 # タイトルバーを透明にしてスッキリさせる
 macos-titlebar-style = transparent
 # フルスクリーン時にMac標準の挙動にする
@@ -29,11 +31,15 @@ macos-window-shadow = true
 mouse-hide-while-typing = true
 
 # --- 操作性 ---
-# 選択しただけでクリップボードにコピー
-copy-on-select = true
+# 選択しただけでシステムクリップボードにコピー
+copy-on-select = clipboard
 # クリップボードの読み書きを許可
 clipboard-read = allow
 clipboard-write = allow
+
+# --- シェル統合 ---
+# SSH先でterminfo自動インストール＋環境変数の伝搬
+shell-integration-features = ssh-terminfo,ssh-env
 
 # --- キーバインド ---
 # Shift+EnterでLFを挿入
