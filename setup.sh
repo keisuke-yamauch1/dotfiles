@@ -39,6 +39,7 @@ mkdir -p ~/.config/deck
 mkdir -p ~/.config/laminate
 mkdir -p ~/.claude
 mkdir -p ~/.claude/hooks
+mkdir -p ~/.claude/scripts
 
 echo ""
 echo "Copying dotfiles..."
@@ -56,6 +57,7 @@ copy_file "$DOTFILES_DIR/deck/config.yml" "$HOME/.config/deck/config.yml"
 copy_file "$DOTFILES_DIR/laminate/config.yaml" "$HOME/.config/laminate/config.yaml"
 copy_file "$DOTFILES_DIR/claude/settings.json" "$HOME/.claude/settings.json"
 copy_file "$DOTFILES_DIR/claude/hooks/discord-notify.py" "$HOME/.claude/hooks/discord-notify.py"
+copy_file "$DOTFILES_DIR/claude/scripts/save-conversation.py" "$HOME/.claude/scripts/save-conversation.py"
 
 # .envは既存がなければsampleからコピー（既存の設定を上書きしない）
 if [ ! -e "$HOME/.claude/.env" ]; then
