@@ -56,6 +56,7 @@ copy_file "$DOTFILES_DIR/ghostty/config" "$HOME/.config/ghostty/config"
 copy_file "$DOTFILES_DIR/deck/config.yml" "$HOME/.config/deck/config.yml"
 copy_file "$DOTFILES_DIR/laminate/config.yaml" "$HOME/.config/laminate/config.yaml"
 copy_file "$DOTFILES_DIR/claude/settings.json" "$HOME/.claude/settings.json"
+copy_file "$DOTFILES_DIR/claude/statusline-command.sh" "$HOME/.claude/statusline-command.sh"
 copy_file "$DOTFILES_DIR/claude/hooks/discord-notify.py" "$HOME/.claude/hooks/discord-notify.py"
 copy_file "$DOTFILES_DIR/claude/scripts/save-conversation.py" "$HOME/.claude/scripts/save-conversation.py"
 

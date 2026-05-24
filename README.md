@@ -17,6 +17,7 @@ macOS用の個人設定ファイル集
 | `laminate/config.yaml` | Laminateコードブロック画像化設定 |
 | `zsh_scripts/obsidian_helper.sh` | Obsidianデイリーノート用ヘルパー |
 | `claude/settings.json` | Claude Code設定（hooks、statusLine、plugins） |
+| `claude/statusline-command.sh` | ステータスライン表示スクリプト（セッション・使用量表示） |
 | `claude/hooks/discord-notify.py` | Claude Code停止・通知時のDiscord通知スクリプト |
 | `claude/scripts/save-conversation.py` | 会話をObsidian vaultに自動保存するスクリプト |
 | `claude/.env.sample` | Claude Code用環境変数のテンプレート |
